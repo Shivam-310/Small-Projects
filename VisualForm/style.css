@@ -1,0 +1,214 @@
+/* Reset some basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+  
+  .form-designer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container {
+    min-height: 300px;
+    padding: 20px;
+    border: 2px dashed #dcdcdc;
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+  
+  .form-element {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: move; /* Indicate draggable */
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-element:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .form-element label {
+    flex: 1;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: text;
+  }
+  
+  .form-element input[type="text"],
+  .form-element select,
+  .form-element textarea {
+    flex: 2;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-element input[type="text"]:focus,
+  .form-element select:focus,
+  .form-element textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form-element .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-element .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .control-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .control-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .save-button {
+    background-color: #28a745;
+  }
+  
+  .save-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .close-button {
+    color: #aaaaaa;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  #options-container {
+    margin-bottom: 20px;
+  }
+  
+  .option-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .option-item input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .option-item .remove-option {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option-item .remove-option:hover {
+    background-color: #c82333;
+  }
+  
+  .modal-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-button:hover {
+    background-color: #0056b3;
+  }
+  
