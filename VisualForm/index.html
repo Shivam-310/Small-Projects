@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visual Form Designer</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- jQuery and jQuery UI for Drag-and-Drop -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Visual Form Designer</h1>
+
+    <div class="form-designer">
+      <div id="form-container" class="form-container">
+        <!-- Form elements will be dynamically injected here -->
+      </div>
+
+      <div class="controls">
+        <button id="add-input" class="control-button">Add Input</button>
+        <button id="add-select" class="control-button">Add Select</button>
+        <button id="add-textarea" class="control-button">Add Textarea</button>
+        <button id="save-form" class="control-button save-button">Save Form</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Editing Select Options -->
+  <div id="option-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Edit Select Options</h2>
+      <div id="options-container">
+        <!-- Options will be dynamically added here -->
+      </div>
+      <button id="add-option" class="modal-button">Add Option</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
